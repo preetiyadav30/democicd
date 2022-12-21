@@ -4,11 +4,11 @@ const fs = require("fs")
 const https = require("https");
 const app = express();
 const port = 9000;
-var options = {
-  key: fs.readFileSync('./ssl/privatekey.key'),
-  cert: fs.readFileSync('./ssl/certificate.pem'),
+// var options = {
+//   key: fs.readFileSync('./ssl/privatekey.key'),
+//   cert: fs.readFileSync('./ssl/certificate.pem'),
  
-};
+// };
 app.use(express.json());
 app.use(cors({ origin: true }));
 
@@ -30,4 +30,4 @@ app.get("/cicdpipeline", (req, res) => {
   );
 });
 
-https.createServer(options, app).listen(9000,() => console.log("App running in port 9000 !"));
+https.createServer(app).listen(9000,() => console.log("App running in port 9000 !"));
