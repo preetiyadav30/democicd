@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
-const fs = require("fs")
-const https = require("https");
+// const fs = require("fs")
+// const https = require("https");
 const app = express();
 const port = 9000;
 // var options = {
@@ -23,7 +23,7 @@ app.use(function (req, res, next) {
 app.get("/cicdpipeline", (req, res) => {
   res.send(
     `<h1 style='text-align: center'>
-          Wellcome to RSL Backend 
+          Wellcome to our first automatic deplyment with github action
           <br><br>
           <b style="font-size: 182px;">😃👻</b>
       </h1>`
