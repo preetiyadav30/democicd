@@ -24,6 +24,8 @@ app.get("/cicdpipeline", (req, res) => {
   res.send(
     `<h1 style='text-align: center'>
           Wellcome to our first automatic deplyment with github action
+          hello from backend
+          
           <br><br>
           <b style="font-size: 182px;">😃👻</b>
       </h1>`
