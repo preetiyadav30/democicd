@@ -29,5 +29,4 @@ app.get("/cicdpipeline", (req, res) => {
       </h1>`
   );
 });
-
-https.createServer(app).listen(9000,() => console.log("App running in port 9000 !"));
+app.listen(9000,() => console.log("App running in port 9000 !"));
